@@ -1,0 +1,5 @@
+a_string="this gets printed?"
+a_number=7
+a_float=7.25
+a_boolean=True
+a_none=None
