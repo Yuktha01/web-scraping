@@ -1,0 +1,8 @@
+Yuki={
+"name":"Yuki",
+"age":20,
+"Indian":True,
+"languages":["English", "Hindi", "Kannada", "Korean"]
+}
+
+print(Yuki)
