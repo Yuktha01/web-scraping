@@ -1,0 +1,21 @@
+import requests
+
+indeed_result=requests.get("https://in.indeed.com/jobs?q=Python+Developer&l=Bengaluru,+Karnataka&limit=50")
+
+print(indeed_result.text)
+
+
+==============================================================================================================================
+
+
+
+import requests
+from bs4 import BeautifulSoup 
+indeed_result=requests.get("https://in.indeed.com/jobs?q=Python+Developer&l=Bengaluru,+Karnataka&limit=50")
+
+indeed_soup= BeautifulSoup(indeed_result.text,"html.parser")
+pagination= indeed_soup.find("div",{"class":"pagination"})
+
+pages=pagination.find_all('a')
+for page in pages:
+  print(page.find("span"))
