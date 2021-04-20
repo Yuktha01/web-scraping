@@ -1,7 +1,7 @@
 # web-scraping
 
 
-  web scarp indeed jobs page number and also display status code
+  web scrap indeed jobs page number and also display status code
 
 
 
